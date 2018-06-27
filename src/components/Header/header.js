@@ -13,9 +13,9 @@ export class Header extends Component {
                         延陵荟互助系统
                     </div>
                     <div id="login_reg">
-                        <a href="./login.html">登录</a>&nbsp;
+                        <a href="./login">登录</a>&nbsp;
                         <span>|</span>&nbsp;
-                        <a href="./register.html">注册</a>
+                        <a href="./register">注册</a>
                     </div>
                 </div>
             </header>

@@ -12,7 +12,7 @@ export class Home extends Component {
         <Header />
         <Banner />
 
-        <article class="YLhelpInfo">
+        <article className="YLhelpInfo">
           <header>
             延陵荟互助
 		      </header>
@@ -20,7 +20,7 @@ export class Home extends Component {
             延陵荟，全名《南京市延陵荟公益服务中心》。创建至今已经十年，是凝聚在宁苏中地区各界精英，交流沟通，互帮互助，同时服务覆盖苏中地区一千五百万百姓的平台。延陵荟是人脉与价值分享平台。她是有互助精神人群专属，线上线下相结合的，为每一位成员提供缔结信任、价值分享、个人成长及发展机会的创新型服务平台。定位人脉与价值分享；爱心与互助公益服务。
 		       </p>
         </article>
-        <div class="gallery">
+        <div className="gallery">
           <ul>
             <li>
               <div>
@@ -44,7 +44,7 @@ export class Home extends Component {
           </ul>
         </div>
 
-        <div class="honourWall">
+        <div className="honourWall">
           <div>荣誉墙</div>
           <ul>
             <li>
@@ -74,7 +74,7 @@ export class Home extends Component {
           </ul>
         </div>
 
-        <div class="urgentMission">
+        <div className="urgentMission">
           <div>紧急任务</div>
           <div>迫在眉睫，孤立无助，施以援手，雪中送炭</div>
         </div>
