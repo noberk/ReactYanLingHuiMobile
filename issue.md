@@ -10,3 +10,5 @@ http://www.yanlinghuigongyi.com/
 安装    
 "react-router": "^4.3.1",
 "react-router-dom": "^4.3.1",
+
+<Link />  no refresh page

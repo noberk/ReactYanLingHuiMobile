@@ -4,7 +4,7 @@ import './home.less';
 import { Header } from "../../components/Header/header";
 import { Banner } from "../../components/Banner/banner";
 
-export class Home extends Component {
+export default class Home extends Component {
 
   render() {
     return (

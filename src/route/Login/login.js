@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './login.less';
 
 
-export class Login extends Component {
+export default class Login extends Component {
 
     render() {
         return (

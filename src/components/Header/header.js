@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import './header.less';
 
 
@@ -13,9 +14,9 @@ export class Header extends Component {
                         延陵荟互助系统
                     </div>
                     <div id="login_reg">
-                        <a href="./login">登录</a>&nbsp;
+                        <Link to="./login">登录</Link>&nbsp;
                         <span>|</span>&nbsp;
-                        <a href="./register">注册</a>
+                        <Link to="./register">注册</Link>
                     </div>
                 </div>
             </header>
