@@ -13,6 +13,13 @@ http://www.yanlinghuigongyi.com/
 
 <Link />  no refresh page
 
-
+npm run build
+serve -s build
 #部署
 https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#deployment
+
+
+
+一,,发布任务  一个页面   http://www.yanlinghuigongyi.com/task/releaseTask
+  
+二,, 任务大厅   1紧急任务  2 普通任务  3查询
