@@ -13,8 +13,10 @@ http://www.yanlinghuigongyi.com/
 
 <Link />  no refresh page
 
-npm run build
-serve -s build
+#npm run build
+
+#npm install -g serve
+#serve -s build
 #部署
 https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#deployment
 

@@ -4,35 +4,31 @@ import { Carousel, WingBlank } from "antd-mobile";
 
 export default class Banner extends Component {
   state = {
-    data: ['1', '2', '3'],
+    data: ['./images/banner1.jpg', './images/banner2.jpg', './images/banner3.jpg'],
     imgHeight: 176,
   }
   componentDidMount() {
     // simulate img loading
     setTimeout(() => {
       this.setState({
-        data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
+        data: ['./images/banner1.jpg', './images/banner2.jpg', './images/banner3.jpg'],
       });
     }, 100);
   }
   render() {
     return (
       <div>
-        <WingBlank>
+        <WingBlank >
           <Carousel
-            autoplay
-            infinite
-            beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-            afterChange={index => console.log('slide to', index)}
-          >
+            style={{height:150}} autoplay infinite>
             {this.state.data.map(val => (
               <a
                 key={val}
-                href="http://www.alipay.com"
+                href="/"
                 style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
               >
                 <img
-                  src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+                  src={val}
                   alt=""
                   style={{ width: '100%', verticalAlign: 'top' }}
                   onLoad={() => {
