@@ -12,3 +12,7 @@ http://www.yanlinghuigongyi.com/
 "react-router-dom": "^4.3.1",
 
 <Link />  no refresh page
+
+
+#部署
+https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#deployment

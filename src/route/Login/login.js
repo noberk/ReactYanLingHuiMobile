@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import './login.less';
 
+import { Header } from "../../components";
+
+import { fo } from "antd-mobile";
 
 export default class Login extends Component {
 
     render() {
         return (
             <div>
-                
+                <Header/>
                 <header className="loginArea">
                     <div>账号登录</div>
                     <div><img src="./images/right1.png" alt="" />&nbsp;&nbsp;<a href="./register.html">立即注册</a></div>
