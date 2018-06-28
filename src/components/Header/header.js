@@ -5,7 +5,7 @@ import './header.less';
 
 
 
-export class Header extends Component {
+export default class Header extends Component {
     render() {
         return (
             <header id="header">
@@ -28,6 +28,3 @@ export class Header extends Component {
  
 
 
-
-
-s

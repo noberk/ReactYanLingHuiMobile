@@ -7,10 +7,12 @@ export default class Login extends Component {
     render() {
         return (
             <div>
+                
                 <header className="loginArea">
                     <div>账号登录</div>
                     <div><img src="./images/right1.png" alt="" />&nbsp;&nbsp;<a href="./register.html">立即注册</a></div>
                 </header>
+
                 {/* <form class="mui-input-group">
                     <div class="mui-input-row">
                         <label>账号</label>

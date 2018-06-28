@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './home.less';
 
-import { Header } from "../../components/Header/header";
-import { Banner } from "../../components/Banner/banner";
+import { Header,Banner } from "../../components";
+
 
 export default class Home extends Component {
 

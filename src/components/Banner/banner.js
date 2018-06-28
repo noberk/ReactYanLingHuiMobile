@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Carousel, WingBlank } from "antd-mobile";
 
 
-export class Banner extends Component {
+export default class Banner extends Component {
   state = {
     data: ['1', '2', '3'],
     imgHeight: 176,
