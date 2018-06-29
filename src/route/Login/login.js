@@ -3,19 +3,50 @@ import './login.less';
 
 import { Header } from "../../components";
 
-import { fo } from "antd-mobile";
+import { Form ,Input } from "antd";
+// import "antd/lib/input/style/index.less";
+// import "antd/lib/Form/style/index.css";
 
-export default class Login extends Component {
+const FormItem = Form.Item;
+
+ class Login extends Component {
 
     render() {
+        const formItemLayout = {
+            labelCol: {
+              xs: { span: 24 },
+              sm: { span: 8 },
+            },
+            wrapperCol: {
+              xs: { span: 24 },
+              sm: { span: 16 },
+            },
+          };
+        const { getFieldDecorator } = this.props.form;
+
         return (
             <div>
-                <Header/>
+                <Header />
                 <header className="loginArea">
                     <div>账号登录</div>
-                    <div><img src="./images/right1.png" alt="" />&nbsp;&nbsp;<a href="./register.html">立即注册</a></div>
+                    
                 </header>
-
+                <Form>
+                    <FormItem
+                        {...formItemLayout}
+                        label="E-mail"
+                    >
+                        {getFieldDecorator('email', {
+                            rules: [{
+                                type: 'email', message: 'The input is not valid E-mail!',
+                            }, {
+                                required: true, message: 'Please input your E-mail!',
+                            }],
+                        })(
+                            <Input />
+                        )}
+                    </FormItem>
+                </Form>
                 {/* <form class="mui-input-group">
                     <div class="mui-input-row">
                         <label>账号</label>
@@ -39,5 +70,8 @@ export default class Login extends Component {
     }
 }
 
+
+ const WrappedRegistrationForm = Form.create()(Login);
+ export default WrappedRegistrationForm;
 
 
